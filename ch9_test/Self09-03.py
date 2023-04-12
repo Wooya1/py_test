@@ -17,7 +17,7 @@ def getBookInfo(book_tag) :
     return [bookName, bookAuth, bookPub, bookDate, bookPrice]
 
 ## 전역 변수부
-bookUrl = "http://www.yes24.com/24/Category/Display/001001046001?ParamSortTp=05&PageNumber=1"
+bookUrl = "http://www.yes24.com/24/Category/Display/001001008020?ParamSortTp=05"
 totalPrice = 0
 
 ## 메인 코드부
