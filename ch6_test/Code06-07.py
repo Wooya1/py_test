@@ -1,6 +1,6 @@
 import csv
 
-with open("C:/CookAnalysis/CSV/singer2.csv", "r") as inFp :
+with open("C:/Test/CSV/singer2.csv", "r") as inFp :
     csvReader = csv.reader(inFp)
     header_list = next(csvReader)
     print(header_list[1],header_list[6])

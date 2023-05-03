@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-inFilename = 'C:/CookAnalysis/Excel/singer.xlsx'
-outFilename = 'C:/CookAnalysis/Excel/singer_over6.xlsx'
+inFilename = 'Excel/singer.xlsx'
+outFilename = 'Excel/singer_over6.xlsx'
 
 df_seniro = pd.read_excel(inFilename, 'senior', index_col=None)
 df_junior = pd.read_excel(inFilename, 'junior', index_col=None)
@@ -22,5 +22,5 @@ plt.show()
 
 writer = pd.ExcelWriter(outFilename)
 df_singer_over6.to_excel(writer, sheet_name='singer', index=False)
-writer.save()
+writer.close()
 print('Save. OK~')

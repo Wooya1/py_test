@@ -6,7 +6,7 @@ data1, data2, data3, data4 = "", "", "", ""
 row=None
 
 ## 메인 코드 부분 ##
-con = sqlite3.connect("naverDB2")
+con = sqlite3.connect("naverDB")
 cur = con.cursor()
 
 cur.execute("SELECT * FROM userTable")
